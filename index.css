@@ -1,0 +1,72 @@
+/* stylize at least text and range slider in HTML (10pts)
+
+ */
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+.prompt {
+    color: blue;
+    text-align: center;
+}
+
+.canvasStyle {
+    border: 1px solid red;
+    display: block;
+    margin: 0 auto;
+}
+
+.button {
+    margin-left: 33cm;
+}
+
+.radio {
+    text-align: center;
+}
+
+.slidecontainer {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.lineWidth {
+    margin-left: 29cm;
+}
+
+.value {
+    text-align: center;
+}
