@@ -1,47 +1,77 @@
 /* stylize at least text and range slider in HTML (10pts)
 
  */
+body {
+    background-color: white; /* 这里的颜色代码可以根据需要更改 */
+}
 
 h1 {
-    color: green;
+    color: rgb(0, 179, 255);
     text-align: center;
 }
 
 .prompt {
-    color: blue;
+    color: rgb(0, 179, 255);
     text-align: center;
 }
 
 .canvasStyle {
-    border: 1px solid red;
+    width: 70%;
+    height: auto;
+    border: 4px solid rgb(19, 128, 0);
     display: block;
     margin: 0 auto;
+    background-color: white;
 }
 
-.button {
-    margin-left: 33cm;
+.button{
+    display: block;
+    text-align: center; /* 可以是 left, right, 或 center */
+}
+
+.button button {
+    font-size: 16px; /* 修改这里的值来改变字体大小 */
 }
 
 .radio {
     text-align: center;
 }
 
-.slidecontainer {
+/* .slidecontainer {
     width: 80%;
     display: block;
     margin: 0 auto;
+} */
+.slidecontainer {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中（如果需要） */
+    flex-direction: column; /* 使子元素垂直排列（如果需要） */
 }
 
-.slider {
+
+/* .slider {
     -webkit-appearance: none;
     width: 100%;
     height: 25px;
-    background: #d3d3d3;
+    background: #bababa;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+} */
+.slider {
+    /* -webkit-appearance: none; */
+    width: 50%; /* 例如，设为容器宽度的50% */
+    height: 25px;
+    background: #bababa;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: auto; /* 这将使滑块在Flex容器中居中 */
 }
+
 
 .slider:hover {
     opacity: 1;
@@ -63,9 +93,15 @@ h1 {
     cursor: pointer;
 }
 
-.lineWidth {
+/* .lineWidth {
     margin-left: 29cm;
+} */
+
+.lineWidth {
+    display: block;
+    text-align: center; /* 可以是 left, right, 或 center */
 }
+
 
 .value {
     text-align: center;

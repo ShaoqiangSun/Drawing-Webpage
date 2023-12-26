@@ -42,7 +42,7 @@ function getPosition(event){
   coord.y = event.clientY - canvas.offsetTop;
 }
   
-// The following function trigeer the flag to start draw (10pts)
+// // The following function trigeer the flag to start draw (10pts)
 function startPainting(event){
   
   /* your code is here */
@@ -50,7 +50,7 @@ function startPainting(event){
   getPosition(event);
 }
 
-// The following function trigeer the flag to stop draw (10pts)
+// // The following function trigeer the flag to stop draw (10pts)
 function stopPainting(){
 
   /* your code is here */
@@ -135,3 +135,19 @@ click_button = function(mode){
 slider.oninput = function() {
   output_v.innerHTML = this.value;
 }
+
+function resizeCanvas() {
+  var canvas = document.getElementById('canvas');
+  var rect = canvas.getBoundingClientRect();
+
+  // 设置canvas的绘图表面大小匹配其在页面上的显示大小
+  canvas.width = rect.width;
+  canvas.height = rect.height;
+}
+
+// 调整canvas大小以匹配其显示大小
+resizeCanvas();
+
+// 窗口大小改变时再次调整大小
+window.addEventListener('resize', resizeCanvas);
+
